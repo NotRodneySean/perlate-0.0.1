@@ -11,6 +11,7 @@ function defaultGrid() {
 
 //Takes (rows, columns) input and makes a grid
 function makeRows(rowNum) {
+  let r;
   //Creates rows
   for (r = 0; r < rowNum; r++) {
     let row = document.createElement('div');
@@ -20,6 +21,7 @@ function makeRows(rowNum) {
 
 //Creates columns
 function makeColumns(cellNum) {
+  let i, j;
   for (i = 0; i < rows.length; i++) {
     for (j = 0; j < cellNum; j++) {
       let newCell = document.createElement('div');
@@ -29,5 +31,3 @@ function makeColumns(cellNum) {
 }
 
 defaultGrid();
-
-export default defaultGrid;

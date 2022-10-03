@@ -1,13 +1,8 @@
 import React from 'react';
-
-import Grid from './Grid';
+import '../scripts/generateGrid';
 
 function Container() {
-  return (
-    <div class="container">
-      <Grid />
-    </div>
-  );
+  return <div class="container"></div>;
 }
 
 export default Container;
